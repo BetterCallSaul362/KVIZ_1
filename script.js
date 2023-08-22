@@ -17,7 +17,7 @@ let question_field = document.querySelector('.question')
 
  if (cookie) {
     let data = cookie.split('/')
-    container_h3.innerHTML = `<h3>В прошлый раз вы дали ${data[1]} правильных ответов из ${data[0]}. Точность - ${Math.round(data[1] * 100 / data[0])}%.</h3>`
+    container_h3.innerHTML = `<h3>Г‚ ГЇГ°Г®ГёГ«Г»Г© Г°Г Г§ ГўГ» Г¤Г Г«ГЁ ${data[1]} ГЇГ°Г ГўГЁГ«ГјГ­Г»Гµ Г®ГІГўГҐГІГ®Гў ГЁГ§ ${data[0]}. Г’Г®Г·Г­Г®Г±ГІГј - ${Math.round(data[1] * 100 / data[0])}%.</h3>`
 }
 
  function randint(min, max) {
@@ -91,8 +91,8 @@ class Question {
          container_main.style.display = 'none'
 
        container_h3.innerHTML = 
-      `Вы дали ${correct_answers_given} правильных ответов из ${total_answers_given}. 
-      Точность - ${Math.round(correct_answers_given * 100 / total_answers_given)}%.` 
+      `Г‚Г» Г¤Г Г«ГЁ ${correct_answers_given} ГЇГ°Г ГўГЁГ«ГјГ­Г»Гµ Г®ГІГўГҐГІГ®Гў ГЁГ§ ${total_answers_given}. 
+      Г’Г®Г·Г­Г®Г±ГІГј - ${Math.round(correct_answers_given * 100 / total_answers_given)}%.` 
       }, 10000)
 
 })
